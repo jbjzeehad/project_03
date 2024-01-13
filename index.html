@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class=" bg-white">
     <!-- Navbar Section -->
-    <header class="bg-[#F85559] grid grid-cols-3 rounded py-2 my-8 rounded-full mx-16">
+    <header class="bg-[#F85559] grid grid-cols-3 rounded py-2 mb-8 rounded-full mx-20">
 
         <div class="flex justify-center">
             <ul class="flex items-center gap-8 font-medium text-lg text-[#FFFFFF]">
@@ -41,7 +42,7 @@
         </div>
     </header>
     <!-- Banner Section -->
-    <section class="relative grid place-items-center mx-16">
+    <section class="relative grid place-items-center mx-20">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="./images/banner1.png" class="w-full" />
@@ -78,7 +79,7 @@
             <button>Shop Now</button>
         </div>
         <div
-            class=" absolute py-4 px-12 shadow-sm shadow-[#000000] -bottom-20 bg-[#FFFFFF] flex justify-center items-center rounded-lg gap-10 text-center font-medium text-lg text-[#121212]">
+            class=" absolute py-4 px-12 shadow-xl shadow-slate-100 -bottom-20 bg-[#FFFFFF] flex justify-center items-center rounded-lg gap-10 text-center font-medium text-lg text-[#121212]">
             <div class="">
                 <img src="./images/fruit1.png">
                 <p>Graps</p>
@@ -103,7 +104,7 @@
     </section>
 
     <!-- Dealer Section -->
-    <section class="border mt-40">
+    <section class=" mt-40">
         <p>Deal of the Day</p>
     </section>
 
@@ -112,64 +113,90 @@
             <div class="border p-8 bg-white grid text-center rounded-lg">
                 <img class="p-5" src="./images/fruit6.png" alt="">
                 <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">12.90$ - 18.85$</p>
-                <p class="my-3 font-medium text-base fnt">Apples</p>
-                <div className="rating">
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" checked />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
+                <p class="my-4 font-medium text-base fnt">Apples</p>
+
+                <div class="rating rating-half flex items-center justify-center mb-4">
+                    <input type="radio" name="rating-1" class="rating-hidden" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2 " />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" checked />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                 </div>
-                <p class="text-[#F85559] font-bold mt-2">Details</p>
+                <p class="text-[#F85559] font-bold">Details</p>
             </div>
             <div class="border p-8 bg-white grid text-center rounded-lg">
                 <img class="p-5" src="./images/fruit7.png" alt="">
-                <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">12.90$ - 18.85$</p>
-                <p class="my-3 font-medium text-base fnt">Orange</p>
-                <div className="rating">
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" checked />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
+                <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">13.45$ - 14.71$</p>
+                <p class="my-4 font-medium text-base fnt">Orange</p>
+
+                <div class="rating rating-half flex items-center justify-center mb-4">
+                    <input type="radio" name="rating-2" class="rating-hidden" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2 " />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                 </div>
-                <p class="text-[#F85559] font-bold mt-2">Details</p>
+                <p class="text-[#F85559] font-bold">Details</p>
             </div>
             <div class="border p-8 bg-white grid text-center rounded-lg">
                 <img class="p-5" src="./images/fruit8.png" alt="">
-                <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">12.90$ - 18.85$</p>
-                <p class="my-3 font-medium text-base fnt">Red Dragon</p>
-                <div className="rating">
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" checked />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
+                <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">21.36$ - 22.05$</p>
+                <p class="my-4 font-medium text-base fnt">Red Dragon</p>
+
+                <div class="rating rating-half flex items-center justify-center mb-4">
+                    <input type="radio" name="rating-3" class="rating-hidden" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2 " />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                    <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                 </div>
-                <p class="text-[#F85559] font-bold mt-2">Details</p>
+                <p class="text-[#F85559] font-bold">Details</p>
             </div>
             <div class="border p-8 bg-white grid text-center rounded-lg">
                 <img class="p-5" src="./images/fruit9.png" alt="">
-                <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">12.90$ - 18.85$</p>
-                <p class="my-3 font-medium text-base fnt">Banana</p>
-                <div className="rating">
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" checked />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
-                    <input type="radio" name="rating-1" className="mask mask-star" />
+                <p class="font-bold text-2xl border-b-2 p-3 text-[#121212]">11.31$ - 13.96$</p>
+                <p class="my-4 font-medium text-base fnt">Banana</p>
+
+                <div class="rating rating-half flex items-center justify-center mb-4">
+                    <input type="radio" name="rating-4" class="rating-hidden" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2 " />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" checked />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                 </div>
-                <p class="text-[#F85559] font-bold mt-2">Details</p>
+                <p class="text-[#F85559] font-bold">Details</p>
             </div>
         </div>
-        <button>Shop All</button>
-
-
-
-
+        <div class=" text-center mt-10">
+            <button class="bg-[#F85559] rounded-lg px-4 py-3 font-bold text-md text-white">Shop All</button>
+        </div>
 
     </section>
-    <script src="https://cdn.tailwindcss.com"></script>
+
 
 </body>
 
