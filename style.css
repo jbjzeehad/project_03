@@ -6,6 +6,10 @@ body {
     color: rgba(18, 18, 18, 60%);
 }
 
+.bg-fnt {
+    color: rgba(18, 18, 18, 10%);
+}
+
 .overlay {
     background-color: black;
 }
